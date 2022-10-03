@@ -1100,7 +1100,7 @@ main (int argc, char *argv[])
 	signal(SIGINT , sig_handler);
 	signal(SIGHUP , sig_handler);
 
-	syslog(LOG_INFO, "ldm "VERSION_STR);
+	//syslog(LOG_INFO, "ldm "VERSION_STR);
 
 	// Create the udev struct/monitor
 	udev = udev_new();
@@ -1164,7 +1164,7 @@ main (int argc, char *argv[])
 		goto cleanup;
 	}
 
-	syslog(LOG_INFO, "Entering the main loop");
+	//syslog(LOG_INFO, "Entering the main loop");
 
 	g_running = 1;
 
